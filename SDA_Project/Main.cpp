@@ -1,6 +1,8 @@
 # include <iostream>
 # include <string>
 # include "Admin.h"
+# include "Teacher.h"
+//# include "Student.h"
 using namespace std;
 int main()
 {
@@ -31,6 +33,7 @@ int main()
 	string exe;
 	Admin a1; Admin a2;
 	Members m1; Members m2;
+	Student S;
 	do {
 		cout << endl;
 		cout << "Enter 1 to add new admin\n";
@@ -48,7 +51,10 @@ int main()
 			a1.add_admin(m1);
 		}
 		else if (choice == 2) {
-			a1.add_teacher(m1);
+			//a1.add_teacher(m1);
+			Teacher t1;
+			
+			t1.add_marks(S, 23);
 		}
 		else if (choice == 3) {
 			a1.add_student(m1);

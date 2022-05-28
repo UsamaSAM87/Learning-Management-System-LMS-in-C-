@@ -13,7 +13,7 @@ public:
 	Members() {
 		phone_number = "\0"; name = "\0"; DOB = "\0"; email = "\0";
 	}
-	void set_member_attributes(/*int id, string name, string DOB, int phone_number, string email*/) {
+	void set_member_attributes() {
 		id = id + 1;
 		cout << "\nEnter name: ";
 		getline(cin, name);
@@ -24,11 +24,6 @@ public:
 		cout << "Enter email: ";
 		getline(cin, email);
 		cout << endl;
-		/*this->id = id;
-		this->phone_number = phone_number;
-		this->name = name;
-		this->DOB = DOB;
-		this->email = email;*/
 	}
 	string get_attributes() {
 		return (name, DOB, email);
