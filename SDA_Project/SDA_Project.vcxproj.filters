@@ -20,9 +20,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Members_of_Institute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Admin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -30,6 +27,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Employees.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Members_of_Institute.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -13,7 +13,7 @@ public:
 	Members() {
 		phone_number = "\0"; name = "\0"; DOB = "\0"; email = "\0";
 	}
-	void set_member_attributes() {
+	virtual void set_member_attributes() {
 		id = id + 1;
 		cout << "\nEnter name: ";
 		getline(cin, name);
@@ -25,6 +25,7 @@ public:
 		getline(cin, email);
 		cout << endl;
 	}
+	//void setID();
 	string get_attributes() {
 		return (name, DOB, email);
 	}
@@ -34,6 +35,13 @@ public:
 		cout << "DOB is: " << DOB << endl;
 		cout << "Phone# is: " << phone_number << endl;
 		cout << "Email-Id is: " << email << endl;
+	}
+	void print_emp_info() {
+		cout << "Admin Id is: " << id << endl;
+		cout << "Name is: " << name << endl;
+	}
+	~Members() {
+
 	}
 };
 int Members::id = 999;
